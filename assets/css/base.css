@@ -1,0 +1,153 @@
+* {
+    box-sizing: inherit;
+}
+
+:root {
+    --primary-color: #7264d6;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: "Open Sans", sans-serif;
+}
+
+.row-center {
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 58px;
+    display: inline-block;
+    min-width: 149px;
+    height: var(--height);
+    padding: 0 12px;
+    border-radius: 8px;
+    background: #212832;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: var(--height);
+    border: none;
+    outline: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.heading {
+    margin-top: 12px;
+    color: #212832;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.17;
+}
+
+.section__title {
+    position: relative;
+    padding-left: 30px;
+    color: #696d77;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.section__title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 2px;
+    background: currentColor;
+}
+
+.section__heading {
+    margin-top: 12px;
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.section__desc {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.hightlight {
+    color: var(--primary-color);
+    background: #fff;
+}
+
+.features__list {
+    margin-top: 28px;
+    margin-bottom: 38px;
+}
+
+.features__item {
+    position: relative;
+    padding-left: 24px;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.features__item + .features__item {
+    margin-top: 18px;
+}
+
+.features__item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.control__dot {
+    width: 22px;
+    height: 6px;
+    margin-top: 38px;
+    border: 1px solid #9b9fab;
+}
+
+.control__dot.active {
+    background: var(--primary-color);
+}
